@@ -13,8 +13,9 @@ const Header = () => {
   };
 
   return (
-    <header className="sticky top-0 z-50 h-14 glass-effect border-b border-border/40">
-      <div className="container mx-auto px-4 h-full">
+    <header className="sticky top-0 z-50 glass-effect border-b border-border/40">
+      {/* Main nav row */}
+      <div className="container mx-auto px-4 h-14">
         <div className="flex h-full items-center justify-between">
           {/* Logo */}
           <div className="flex items-center gap-2">
@@ -52,6 +53,14 @@ const Header = () => {
             </button>
           </div>
         </div>
+      </div>
+
+      {/* Cravings Corner heading strip */}
+      <div className="border-t border-border/30 py-1.5 text-center relative overflow-hidden">
+        <div className="absolute inset-0 opacity-5 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-pink-400 via-transparent to-transparent pointer-events-none" />
+        <p className="font-display text-sm md:text-base font-bold tracking-wide bg-gradient-to-r from-pink-500 via-rose-400 to-amber-400 bg-clip-text text-transparent leading-tight">
+          ✨ Masqati's Cravings Corner ✨
+        </p>
       </div>
     </header>
   );
