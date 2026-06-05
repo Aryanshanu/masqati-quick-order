@@ -25,7 +25,7 @@ const IndexContent = () => {
   };
 
   return (
-    <div className="min-h-screen bg-background pb-20">
+    <div className="min-h-screen bg-background pb-28">
       <Header />
       <HeroSection />
       <TopPicks />

@@ -62,7 +62,7 @@ const ProductList = ({ activeCategory, searchQuery, onCategoryInView }: ProductL
 
   if (filteredProducts) {
     return (
-      <div id="product-list" className="container mx-auto px-4 pb-28">
+      <div id="product-list" className="container mx-auto px-4 pb-32">
         <div className="mb-5">
           <h2 className="font-display text-xl text-foreground font-bold">
             Search Results
@@ -90,7 +90,7 @@ const ProductList = ({ activeCategory, searchQuery, onCategoryInView }: ProductL
   }
 
   return (
-    <div id="product-list" className="container mx-auto px-4 pb-28">
+    <div id="product-list" className="container mx-auto px-4 pb-32">
       {categories.map((category) => {
         const categoryProducts = getProductsByCategory(category.id);
         if (categoryProducts.length === 0) return null;
@@ -103,7 +103,7 @@ const ProductList = ({ activeCategory, searchQuery, onCategoryInView }: ProductL
             id={`category-${category.id}`}
             data-category-id={category.id}
             ref={(el) => (categoryRefs.current[category.id] = el)}
-            className="mb-10 scroll-mt-36"
+            className="mb-10 scroll-mt-[140px]"
           >
             {/* Category Header */}
             <div className="flex items-center justify-between mb-5">

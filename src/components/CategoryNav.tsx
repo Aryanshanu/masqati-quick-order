@@ -8,7 +8,7 @@ interface CategoryNavProps {
 
 const CategoryNav = ({ activeCategory, onCategoryChange }: CategoryNavProps) => {
   return (
-    <nav className="sticky top-14 z-40 glass-effect border-b border-border/60 shadow-sm">
+    <nav className="sticky top-[86px] z-40 glass-effect border-b border-border/60 shadow-sm">
       <div className="container mx-auto px-4 py-2.5">
         <div className="flex gap-1.5 overflow-x-auto scrollbar-hide pb-0.5 snap-x snap-mandatory justify-start sm:justify-center">
           {categories.map((category) => (

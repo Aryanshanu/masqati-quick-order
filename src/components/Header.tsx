@@ -55,10 +55,10 @@ const Header = () => {
         </div>
       </div>
 
-      {/* Cravings Corner heading strip */}
-      <div className="border-t border-border/30 py-1.5 text-center relative overflow-hidden">
+      {/* Cravings Corner heading strip — fixed 30px so total header = 86px */}
+      <div className="border-t border-border/30 h-[30px] flex items-center justify-center relative overflow-hidden">
         <div className="absolute inset-0 opacity-5 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-pink-400 via-transparent to-transparent pointer-events-none" />
-        <p className="font-display text-sm md:text-base font-bold tracking-wide bg-gradient-to-r from-pink-500 via-rose-400 to-amber-400 bg-clip-text text-transparent leading-tight">
+        <p className="font-display text-xs md:text-sm font-bold tracking-wide bg-gradient-to-r from-pink-500 via-rose-400 to-amber-400 bg-clip-text text-transparent leading-none">
           ✨ Masqati's Cravings Corner ✨
         </p>
       </div>
