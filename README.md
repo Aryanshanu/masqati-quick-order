@@ -1,50 +1,47 @@
-# Masqati Pocharam
+# Masqati Quick Order
 
-Premium ice cream, dairy products, namkeens & food menu catalogue for Masqati - Pocharam, Ghatkesar.
+Product catalogue and quick order app for **Masqati Ice Cream Parlour & Specials**, Pocharam, Hyderabad.
+Celebrating 50+ Years | 100% Pure Veg | Hyderabad's Own Brand Since 1965.
+
+## Features
+
+- Browse ice creams, chaats, shakes, pizzas, namkeens & more
+- Category navigation and search
+- Add to cart with quantity controls
+- Favorites list
+- WhatsApp checkout — fills a pre-formatted order message and opens WhatsApp directly
+- Geolocation-based address detection at checkout
+- Mobile-first responsive design
 
 ## Tech Stack
 
-- **Vite** - Build tool
-- **TypeScript** - Type safety
-- **React** - UI framework
-- **shadcn/ui** - Component library
-- **Tailwind CSS** - Styling
-- **Supabase** - Backend (Edge Functions for chat assistant)
+- **Vite** + **TypeScript** — build tool & type safety
+- **React** — UI framework
+- **shadcn/ui** — component library
+- **Tailwind CSS** — styling
 
 ## Getting Started
 
 ```sh
 # Clone the repository
-git clone https://github.com/Aryanshanu/masquati-pocharam.git
+git clone https://github.com/Aryanshanu/masqati-quick-order.git
 
 # Navigate to the project directory
-cd masquati-pocharam
+cd masqati-quick-order
 
 # Install dependencies
 npm install
-
-# Create .env file with required environment variables
-cp .env.example .env
 
 # Start the development server
 npm run dev
 ```
 
-## Environment Variables
+No environment variables required. The app runs entirely client-side.
 
-Create a `.env` file in the root directory with:
+## WhatsApp Order Flow
 
-```
-VITE_SUPABASE_URL=your_supabase_url
-VITE_SUPABASE_PUBLISHABLE_KEY=your_supabase_anon_key
-VITE_SUPABASE_PROJECT_ID=your_project_id
-```
-
-## Features
-
-- Product catalogue with categories and subcategories
-- Shopping cart with WhatsApp checkout
-- AI-powered chat assistant for menu queries
-- Geolocation-based address detection
-- Favorites list
-- Mobile-first responsive design
+1. Customer browses the catalogue and adds items to cart
+2. Taps **Proceed to Checkout**
+3. Fills in name, contact, and optional address / auto-detected location
+4. Taps **Place Order via WhatsApp**
+5. WhatsApp opens with a pre-formatted order message sent to the store number

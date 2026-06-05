@@ -11,7 +11,6 @@ import BottomNav from "@/components/BottomNav";
 import CartDrawer from "@/components/CartDrawer";
 import FavoritesList from "@/components/FavoritesList";
 import CheckoutForm from "@/components/CheckoutForm";
-import ChatAssistant from "@/components/ChatAssistant";
 
 const IndexContent = () => {
   const [activeCategory, setActiveCategory] = useState("ice-cream");
@@ -54,7 +53,6 @@ const IndexContent = () => {
       />
       <FavoritesList open={isFavoritesOpen} onOpenChange={setIsFavoritesOpen} />
       <CheckoutForm open={isCheckoutOpen} onOpenChange={setIsCheckoutOpen} />
-      <ChatAssistant />
     </div>
   );
 };
